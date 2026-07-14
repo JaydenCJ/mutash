@@ -1,0 +1,18 @@
+[package]
+name = "mutash"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+authors = ["JaydenCJ"]
+description = "Mutation testing for shell scripts: flips operators and flags token-by-token, runs your bats (or any) test command against every mutant, and grades the suite."
+license = "MIT"
+repository = "https://github.com/JaydenCJ/mutash"
+keywords = ["mutation-testing", "shell", "bash", "bats", "testing"]
+categories = ["command-line-utilities", "development-tools::testing"]
+
+[dependencies]
+# none — mutash is std-only by design (see README "Why mutash?")
+
+[profile.release]
+strip = true
+lto = true

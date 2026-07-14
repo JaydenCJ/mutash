@@ -1,0 +1,25 @@
+# --- build outputs ---
+target/
+build/
+dist/
+out/
+
+# --- dependency dirs (mutash has none; common in projects it is run against) ---
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# --- env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- caches / editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+.cache/
+coverage/
+*.log
+tmp/
